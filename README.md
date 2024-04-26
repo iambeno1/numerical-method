@@ -1,2 +1,1 @@
 # numerical-method
-la
