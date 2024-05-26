@@ -50,16 +50,16 @@ def central_diff_velocity(t, y):
     v = np.zeros(len(t))
     for i in range(1, len(t) - 1):
         v[i] = (y[i + 1] - y[i - 1]) / (t[i + 1] - t[i - 1])
-    v[0] = (y[1] - y[0]) / (t[1] - t[0])  # forward difference for the first point
-    v[-1] = (y[-1] - y[-2]) / (t[-1] - t[-2])  # backward difference for the last point
+    v[0] = (y[1] - y[0]) / (t[1] - t[0])  # selisih maju untuk poin pertama
+    v[-1] = (y[-1] - y[-2]) / (t[-1] - t[-2])  # selisih mundur untuk poin terakhir
     return v
 
 def central_diff_acceleration(t, v):
     a = np.zeros(len(t))
     for i in range(1, len(t) - 1):
         a[i] = (v[i + 1] - v[i]) / (t[i + 1] - t[i])
-    a[0] = (v[1] - v[0]) / (t[1] - t[0])  # forward difference for the first point
-    a[-1] = (v[-1] - v[-2]) / (t[-1] - t[-2])  # backward difference for the last point
+    a[0] = (v[1] - v[0]) / (t[1] - t[0])  # selisih maju untuk poin pertama
+    a[-1] = (v[-1] - v[-2]) / (t[-1] - t[-2])  # selisih mundur untuk poin terakhir
     return a
 
 v = central_diff_velocity(t, y)
