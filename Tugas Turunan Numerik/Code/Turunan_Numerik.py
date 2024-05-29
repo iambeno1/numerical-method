@@ -1,5 +1,10 @@
 import numpy as np
 
+print("Nama \t: Benony Gabriel")
+print("NIM \t: 105222002\n")
+
+print("Penyelesaian")
+
 # Soal 1
 def f1(x):
     return np.sin(0.5 * np.sqrt(x)) / x
@@ -66,3 +71,8 @@ print("\nLatihan 3:")
 print("Waktu (s)   Kecepatan (km/s)   Percepatan (km/s^2)")
 for i in range(len(t)):
     print(f"{t[i]:>6}      {v[i]:>12.4f}       {a[i]:>15.4f}")
+
+
+
+
+# Benony Gabriel - 105222002
